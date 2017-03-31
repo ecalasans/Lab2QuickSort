@@ -9,13 +9,33 @@ class Quicksort {
         int temp;
 
         temp = a[i];
-        a[j] = a[i];
-        a[i] = temp;
+        a[i] = a[j];
+        a[j] = temp;
 
     }
 
     static int partition(int[] a, int l, int r) {
-        return 0; // a ser completada
+        int pivo = l;
+
+        while (l < r){
+            while (l <= r && a[l] <= a[pivo]){
+                l++;
+            }
+
+            while(a[r] > a[pivo]){
+                r--;
+            }
+
+            if(l < r){
+                swap(a, l, r);
+            }
+        }
+
+        int aux = a[pivo];
+        a[pivo] = a[r];
+        a[r] = aux;
+
+        return r;
     }
 
     static void quickrec(int[] a, int l, int r) {
