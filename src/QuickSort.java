@@ -31,9 +31,6 @@ class Quicksort {
             }
         }
 
-        /*int aux = a[pivo];
-        a[pivo] = a[r];
-        a[r] = aux;*/
         swap(a,pivo,r);
 
         return r;
