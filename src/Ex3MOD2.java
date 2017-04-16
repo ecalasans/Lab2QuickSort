@@ -75,11 +75,11 @@ class Ex3 {
                 for (int r = l+1; r < len; r++)
                     test_partition(random_array(len), l, r);
 
-        /*System.out.println("teste de quicksort");
+        System.out.println("teste de quicksort");
         for (int len = 0; len < 10; len++)
             for (int j = 0; j <= len; j++)
                 test(random_array(len));
-        System.out.println("SUCESSO");*/
+        System.out.println("SUCESSO");
     }
 
 }
